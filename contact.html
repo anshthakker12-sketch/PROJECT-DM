@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Navyug Pharmachem Pvt. Ltd.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="topbar">
+  <span>📞 +91-278-2540136</span>
+  <span>✉️ contact@navyugpharmachem.com</span>
+  <span>📍 Navagam, Bhavnagar, Gujarat, India</span>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-circle">NP</div>
+      <div>
+        <div class="logo-name">Navyug Pharmachem</div>
+        <div class="logo-sub">Pvt. Ltd.</div>
+      </div>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="exports.html">Global Exports</a></li>
+      <li><a href="contact.html" class="active nav-cta">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> → Contact Us</div>
+    <h1>Get In <span class="hero-accent">Touch</span></h1>
+    <p>We'd love to hear from you. Reach out for product enquiries, quotes, or export information.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-form-box">
+        <h2>Send Us a Message</h2>
+        <p style="color:#666;margin-bottom:1.5rem;font-size:14px;">Fill out the form below and we'll get back to you within 24 hours.</p>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group"><label>Your Name *</label><input type="text" placeholder="e.g. Rahul Sharma" required/></div>
+            <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your company"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email Address *</label><input type="email" placeholder="you@example.com" required/></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+          </div>
+          <div class="form-group">
+            <label>Product of Interest</label>
+            <select>
+              <option value="">-- Select a Product --</option>
+              <option>Benzyl Benzoate</option>
+              <option>Sodium Benzoate</option>
+              <option>Benzyl Alcohol</option>
+              <option>Benzyl Acetate</option>
+              <option>Benzoic Acid</option>
+              <option>DEET (Mosquito Repellent)</option>
+              <option>Upcoming Products</option>
+              <option>Other / General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Your Message *</label><textarea rows="5" placeholder="Tell us about your requirements, quantities needed, destination country, etc." required></textarea></div>
+          <button type="submit" class="btn-red" style="width:100%;justify-content:center;">Send Message →</button>
+        </form>
+        <div id="formSuccess" class="form-success" style="display:none;">✅ Thank you! Your message has been sent. We'll respond within 24 hours.</div>
+      </div>
+      <div class="contact-info-box">
+        <h2>Contact Information</h2>
+        <div class="ci-item"><div class="ci-icon">📞</div><div><div class="ci-label">Phone</div><div class="ci-value">+91-278-2540136<br>+91-278-2541836<br>+91-278-2541679</div></div></div>
+        <div class="ci-item"><div class="ci-icon">📠</div><div><div class="ci-label">Fax</div><div class="ci-value">+91-278-2428022</div></div></div>
+        <div class="ci-item"><div class="ci-icon">✉️</div><div><div class="ci-label">Email</div><div class="ci-value">contact@navyugpharmachem.com</div></div></div>
+        <div class="ci-item"><div class="ci-icon">🌐</div><div><div class="ci-label">Website</div><div class="ci-value">www.navyugpharmachem.com</div></div></div>
+        <div class="ci-item"><div class="ci-icon">📍</div><div><div class="ci-label">Factory Address</div><div class="ci-value">Survey No. 260/2, Navagam (Kardej),<br>Dist. Bhavnagar – 364060,<br>Gujarat, India</div></div></div>
+        <div class="ci-item"><div class="ci-icon">🕐</div><div><div class="ci-label">Business Hours</div><div class="ci-value">Monday – Saturday: 9:00 AM – 6:00 PM IST</div></div></div>
+        <div class="map-placeholder">
+          <iframe src="https://maps.google.com/maps?q=Navagam,+Bhavnagar,+Gujarat,+India&output=embed" width="100%" height="220" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-banner">
+  <div class="container">
+    <h2>We Export Worldwide – Let's Work Together</h2>
+    <p>Whether you're a pharma company, formulator, or trader, we welcome long-term partnerships.</p>
+    <a href="products.html" class="btn-white">View Our Products</a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-logo">Navyug Pharmachem Pvt. Ltd.</div>
+      <p class="footer-desc">India's trusted manufacturer of bulk drugs and pharmaceutical raw materials since 1972.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="exports.html">Global Exports</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <p>📞 +91-278-2540136 / 2541836</p>
+      <p>✉️ contact@navyugpharmachem.com</p>
+      <p>📍 Survey No. 260/2, Navagam (Kardej), Dist. Bhavnagar, Gujarat</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Navyug Pharmachem Pvt. Ltd. All rights reserved.</p></div>
+</footer>
+<script src="script.js"></script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
+</body>
+</html>
